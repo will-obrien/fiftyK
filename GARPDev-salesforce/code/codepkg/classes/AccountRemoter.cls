@@ -1,4 +1,4 @@
-global with sharing class AccountRemoter {
+global with sharing class AccountRemoter { //NOSONAR
 
     public String accountName { get; set; }
     public static Account account { get; set; }
@@ -9,7 +9,7 @@ global with sharing class AccountRemoter {
         public string phone { get; set; }
     }
     
-    
+    @SuppressWarnings('all')
     global class returnData {
         public List<sObject> recordData { get; set; }
         public List<sObject> objectData { get; set; }
